@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAY66 - Free Demo Casino</title>
+    <script src="https://jsdelivr.net"></script>
+    <style>
+        body { background-color: #0d131a; color: #ffffff; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="flex items-center justify-between px-4 py-3 bg-[#16202c] border-b border-gray-700 sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <span class="text-2xl font-black tracking-wider text-white">PLAY<span class="text-yellow-400">66</span></span>
+        </div>
+        <div class="flex space-x-2">
+            <button class="bg-transparent text-white border border-gray-500 px-4 py-1.5 rounded text-sm font-semibold hover:bg-gray-800">Log In</button>
+            <button class="bg-[#00b276] text-black px-4 py-1.5 rounded text-sm font-bold hover:bg-emerald-500">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="flex space-x-6 overflow-x-auto px-4 py-3 bg-[#111923] text-sm whitespace-nowrap scrollbar-none">
+        <span class="text-red-500 font-bold border-b-2 border-red-500 pb-1 cursor-pointer">HOME</span>
+        <span class="text-gray-400 cursor-pointer hover:text-white">🏏 CRICKET</span>
+        <span class="text-gray-400 cursor-pointer hover:text-white">🏆 SPORTSBOOK</span>
+        <span class="text-gray-400 cursor-pointer hover:text-white">🎰 CASINO</span>
+    </nav>
+
+    <!-- Fake Wallet Banner -->
+    <div class="m-4 p-4 bg-gradient-to-r from-yellow-600 to-amber-500 rounded-xl flex justify-between items-center shadow-lg">
+        <div>
+            <p class="text-xs text-amber-100 uppercase tracking-wider font-semibold">Demo Account Balance</p>
+            <p class="text-2xl font-black text-white mt-0.5">🪙 1,000 <span class="text-xs font-normal text-amber-200">Coins</span></p>
+        </div>
+        <button onclick="addDemoCoins()" class="bg-white text-amber-700 px-4 py-2 rounded-lg text-xs font-black uppercase tracking-wider shadow hover:bg-amber-50">
+            + Free Deposit
+        </button>
+    </div>
+
+    <!-- Games Section -->
+    <main class="px-4 pb-20">
+        <h2 class="text-lg font-bold my-4 flex items-center"><span class="text-yellow-400 mr-2">🔥</span> Popular Games</h2>
+        
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Card 1 -->
+            <div class="bg-[#16202c] rounded-xl overflow-hidden shadow-md border border-gray-800">
+                <div class="h-36 bg-gradient-to-br from-purple-800 to-indigo-900 flex flex-col justify-between p-3">
+                    <span class="text-xs font-bold tracking-widest text-purple-300">JILI GAMES</span>
+                    <p class="text-xl font-black tracking-wide text-white drop-shadow">⚡ JILI SLOTS</p>
+                </div>
+                <div class="p-3 flex justify-between items-center bg-[#111923]">
+                    <span class="text-xs text-gray-400">Demo Mode</span>
+                    <button class="bg-yellow-500 text-black px-3 py-1 rounded text-xs font-bold">Play</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-[#16202c] rounded-xl overflow-hidden shadow-md border border-gray-800">
+                <div class="h-36 bg-gradient-to-br from-green-800 to-emerald-900 flex flex-col justify-between p-3">
+                    <span class="text-xs font-bold tracking-widest text-emerald-300">EVOLUTION</span>
+                    <p class="text-xl font-black tracking-wide text-white drop-shadow">⚽ GOLDEN KICK</p>
+                </div>
+                <div class="p-3 flex justify-between items-center bg-[#111923]">
+                    <span class="text-xs text-gray-400">Demo Mode</span>
+                    <button class="bg-yellow-500 text-black px-3 py-1 rounded text-xs font-bold">Play</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function addDemoCoins() {
+            alert("Success! 500 Demo Coins aapke wallet me add kar diye gaye hain.");
+        }
+    </script>
+</body>
+</html>
